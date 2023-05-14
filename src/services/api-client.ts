@@ -1,8 +1,13 @@
-import axios from "axios";
+import axios from 'axios';
+
+export interface FetchResponse<T> {
+  count: number;
+  results: T[];
+}
 
 export default axios.create({
-  baseURL: "https://api.rawg.io/api",
+  baseURL: 'https://api.rawg.io/api',
   params: {
-    key: "c7b18323a47d40c394ea5b019646b1f5",
+    key: '2bc8c43f03c44e0d9d3e32a20aa18fd9',
   },
 });
