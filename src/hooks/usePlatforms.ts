@@ -9,7 +9,6 @@ interface Platform {
   slug: string;
 }
 
-//const usePlatforms = () => ({ data: platforms, isLoading: false, error: null });
 const usePlatforms = () =>
   useQuery({
     queryKey: ['platforms'],
